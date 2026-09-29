@@ -1,0 +1,666 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+/*  TOP BAR   */
+
+.top-bar {
+    width: 100%;
+    height: 65px;
+    background-color: #05004d;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 70px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.logo i {
+    font-size: 27px;
+}
+
+
+.logo span {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+
+.logo small {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 2px;
+}
+
+
+
+/* PHONE */
+
+.phone-number {
+    display: flex;
+
+    align-items: center;
+    gap: 10px;
+
+    font-size: 16px;
+}
+
+
+.phone-number i {
+    font-size: 16px;
+}
+
+/*  MAIN PAGE  */
+
+.page {
+    width: 1200px;
+    max-width: 94%;
+
+    margin: 30px auto 60px;
+
+    display: grid;
+    grid-template-columns: 720px 390px;
+
+    gap: 45px;
+
+    align-items: start;
+}
+
+.left-content {
+    width: 100%;
+}
+
+/* Main Video  */
+
+.main-video {
+    width: 70%;
+    height: 450px;
+
+    overflow: hidden;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    background-color: #eeeeee;
+}
+
+
+.main-video video {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: cover;
+}
+
+
+
+/* SIX SIGNS SECTION */
+
+.sign-section {
+    width: 100%;
+    background-color: #f5f1ec;
+    border-radius: 14px;
+    padding: 25px 28px;
+    margin-bottom: 30px;
+}
+
+
+.sign-section h2 {
+    color: #171744;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+
+.sign-section h2 span {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+
+
+/* SIGNS */
+
+.signs {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.sign {
+    width: 120px;
+
+    text-align: center;
+
+    color: #28284c;
+}
+
+
+.sign-icon {
+    width: 58px;
+    height: 58px;
+
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sign-icon i {
+    font-size: 27px;
+}
+
+
+.sign p {
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+/*  FAQ  */
+
+.faq-section {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+
+.faq-section h2 {
+    color: #15154b;
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.faq-item {
+    width: 100%;
+    min-height: 55px;
+    padding: 0 5px;
+
+    border-bottom: 1px solid #dedede;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    color: #222222;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+.faq-item span {
+    padding-right: 20px;
+}
+
+
+.faq-item i {
+    color: #666666;
+
+    font-size: 12px;
+}
+
+/*  Help  */
+
+.help-section {
+    width: 100%;
+    margin: 30px 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 15px;
+}
+
+
+.help-section span {
+    color: #444444;
+}
+
+
+.help-section a {
+    color: #17174b;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+.help-section a i {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+/*  Reviews  */
+
+.reviews-section {
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.reviews-section h2 {
+    color: #15154b;
+
+    font-size: 25px;
+
+    font-weight: 600;
+}
+
+
+.review-box {
+    width: 100%;
+    margin-top: 15px;
+
+    padding: 22px;
+
+    border: 1px solid #e1e1e1;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.rating {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.rating strong {
+    font-size: 34px;
+}
+
+
+.rating span {
+    color: #f5a623;
+
+    font-size: 25px;
+}
+
+
+.review-text p {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #444444;
+}
+
+   /* RIGHT BOOKING CARD */
+
+.booking-card {
+    width: 390px;
+
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+
+    padding: 25px;
+
+    position: sticky;
+
+    top: 90px;
+
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* TITLE */
+
+.booking-card h2 {
+    color: #111111;
+
+    font-size: 23px;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+
+.booking-subtitle {
+    color: #666666;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+
+
+/* SUB HEADING */
+
+.booking-card h3 {
+    color: #008b4b;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    margin-top: 22px;
+
+    margin-bottom: 13px;
+}
+
+
+
+/* LIST */
+
+.booking-card ul {
+    list-style: none;
+
+    padding: 0;
+}
+
+
+.booking-card li {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 13px;
+
+    color: #444444;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+.booking-card li i {
+    color: #36ae70;
+
+    font-size: 13px;
+
+    margin-top: 3px;
+
+    flex-shrink: 0;
+}
+
+/*  Price Section  */
+
+.price-section {
+    width: 100%;
+
+    margin-top: 25px;
+    padding-top: 20px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+
+.price-details {
+
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+
+.price-details>div {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.price-details small {
+    color: #555555;
+
+    font-size: 12px;
+}
+
+
+.price-details strong {
+    color: #111111;
+
+    font-size: 20px;
+}
+
+
+
+/* BUTTON */
+
+.book-button {
+    width: 100%;
+    height: 48px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #05004d;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.book-button:hover {
+    background-color: #17176d;
+}
+
+
+
+@media (max-width: 1100px) {
+
+    .page {
+        grid-template-columns: 1fr 350px;
+
+        gap: 25px;
+    }
+
+
+    .booking-card {
+        width: 100%;
+    }
+
+
+    .main-video {
+        height: 370px;
+    }
+
+}
+
+
+
+@media (max-width: 800px) {
+
+    .top-bar {
+        padding: 0 25px;
+    }
+
+
+    .logo span {
+        font-size: 22px;
+    }
+
+
+    .logo small {
+        font-size: 13px;
+    }
+
+
+    .phone-number {
+        font-size: 13px;
+    }
+
+
+    .page {
+        display: block;
+
+        width: 94%;
+
+        max-width: 94%;
+    }
+
+
+    .main-video {
+        height: 420px;
+    }
+
+
+    .booking-card {
+        width: 100%;
+
+        margin-top: 30px;
+
+        position: static;
+    }
+
+}
+
+
+
+@media (max-width: 550px) {
+
+    .top-bar {
+        height: 58px;
+
+        padding: 0 15px;
+    }
+
+
+    .logo i {
+        font-size: 21px;
+    }
+
+
+    .logo span {
+        font-size: 19px;
+    }
+
+
+    .logo small {
+        font-size: 11px;
+    }
+
+
+    .phone-number span {
+        display: none;
+    }
+
+
+    .main-video {
+        height: 250px;
+
+        border-radius: 10px;
+    }
+
+
+    .sign-section {
+        padding: 20px 15px;
+    }
+
+
+    .sign-section h2 {
+        font-size: 21px;
+    }
+
+
+    .signs {
+        gap: 5px;
+    }
+
+
+    .sign {
+        width: 20%;
+    }
+
+
+    .sign-icon {
+        width: 45px;
+
+        height: 45px;
+    }
+
+
+    .sign-icon i {
+        font-size: 20px;
+    }
+
+
+    .sign p {
+        font-size: 9px;
+    }
+
+
+    .faq-section h2 {
+        font-size: 21px;
+    }
+
+
+    .faq-item {
+        font-size: 13px;
+
+        min-height: 50px;
+    }
+
+
+    .booking-card {
+        padding: 20px;
+    }
+
+}

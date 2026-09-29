@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+
+/* Dark background */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.55);
+}
+
+
+/* Login Box */
+
+.login-box {
+    position: fixed;
+
+    width: 472px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: white;
+
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    z-index: 10;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Top Image */
+
+.login-image {
+    width: 100%;
+    height: 240px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Close Button */
+
+.close-btn {
+    position: absolute;
+
+    top: 17px;
+    right: 17px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    font-size: 28px;
+
+    font-weight: 300;
+
+    color: #333;
+
+    cursor: pointer;
+}
+
+
+/* Login Content */
+
+.login-content {
+    padding: 25px 48px 23px;
+}
+
+
+/* Heading */
+
+.login-content h2 {
+    color: #29275d;
+
+    font-size: 19px;
+
+    font-weight: 400;
+
+    margin-bottom: 32px;
+}
+
+
+/* Input */
+
+.input-box {
+    width: 100%;
+    height: 41px;
+
+    border: 1px solid #d8d8e3;
+
+    border-radius: 12px;
+
+    padding: 0 15px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.input-box:focus {
+    border-color: #36336d;
+}
+
+
+/* Terms */
+
+.terms {
+    margin-top: 9px;
+
+    font-size: 11px;
+
+    line-height: 18px;
+
+    color: #373568;
+}
+
+.terms a {
+    color: #29275d;
+
+    font-weight: bold;
+
+    text-decoration: underline;
+}
+
+
+/* Whatsapp */
+
+.whatsapp {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 8px;
+
+    font-size: 11px;
+
+    color: #4b4b63;
+}
+
+.whatsapp input {
+    width: 18px;
+    height: 18px;
+
+    accent-color: #30306a;
+}
+
+.whatsapp-icon {
+    color: #25d366;
+
+    font-size: 20px;
+}
+
+
+/* Sign In Button */
+
+.signin-btn {
+    width: 100%;
+    height: 41px;
+
+    margin-top: 14px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #cecece;
+
+    color: #25245c;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* Account */
+
+.account {
+    margin-top: 13px;
+
+    font-size: 11px;
+
+    color: #4b4b63;
+}
+
+.account a {
+    color: #19174f;
+
+    font-weight: bold;
+
+    text-decoration: underline;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .login-box {
+        width: 92%;
+    }
+
+    .login-image {
+        height: 190px;
+    }
+
+    .login-content {
+        padding: 22px 25px;
+    }
+}
